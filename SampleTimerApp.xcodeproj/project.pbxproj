@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41E6CC2326CB95B600BAD7B4 /* SampleTimerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6CC2226CB95B600BAD7B4 /* SampleTimerAppApp.swift */; };
-		41E6CC2526CB95B600BAD7B4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6CC2426CB95B600BAD7B4 /* ContentView.swift */; };
+		41E6CC2526CB95B600BAD7B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6CC2426CB95B600BAD7B4 /* HomeView.swift */; };
 		41E6CC2726CB95BC00BAD7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E6CC2626CB95BC00BAD7B4 /* Assets.xcassets */; };
 		41E6CC2A26CB95BC00BAD7B4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E6CC2926CB95BC00BAD7B4 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		41E6CC1F26CB95B600BAD7B4 /* SampleTimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E6CC2226CB95B600BAD7B4 /* SampleTimerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTimerAppApp.swift; sourceTree = "<group>"; };
-		41E6CC2426CB95B600BAD7B4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		41E6CC2426CB95B600BAD7B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		41E6CC2626CB95BC00BAD7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41E6CC2926CB95BC00BAD7B4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41E6CC2B26CB95BC00BAD7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				41E6CC2226CB95B600BAD7B4 /* SampleTimerAppApp.swift */,
-				41E6CC2426CB95B600BAD7B4 /* ContentView.swift */,
+				41E6CC2426CB95B600BAD7B4 /* HomeView.swift */,
 				41E6CC2626CB95BC00BAD7B4 /* Assets.xcassets */,
 				41E6CC2B26CB95BC00BAD7B4 /* Info.plist */,
 				41E6CC2826CB95BC00BAD7B4 /* Preview Content */,
@@ -76,6 +76,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 41E6CC2E26CB95BC00BAD7B4 /* Build configuration list for PBXNativeTarget "SampleTimerApp" */;
 			buildPhases = (
+				417589A026CB96E300201DCD /* Run SwiftLint */,
 				41E6CC1B26CB95B600BAD7B4 /* Sources */,
 				41E6CC1C26CB95B600BAD7B4 /* Frameworks */,
 				41E6CC1D26CB95B600BAD7B4 /* Resources */,
@@ -133,12 +134,33 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		417589A026CB96E300201DCD /* Run SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run SwiftLint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		41E6CC1B26CB95B600BAD7B4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41E6CC2526CB95B600BAD7B4 /* ContentView.swift in Sources */,
+				41E6CC2526CB95B600BAD7B4 /* HomeView.swift in Sources */,
 				41E6CC2326CB95B600BAD7B4 /* SampleTimerAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
