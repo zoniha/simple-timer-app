@@ -11,3 +11,5 @@ excluded:
 line_length:
   warning: 150
   error: 200
+vertical_whitespace:
+  max_empty_lines: 2
