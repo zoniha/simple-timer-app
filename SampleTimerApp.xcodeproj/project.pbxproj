@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		417589A326CCF10C00201DCD /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417589A226CCF10C00201DCD /* SettingView.swift */; };
 		41E6CC2326CB95B600BAD7B4 /* SampleTimerAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6CC2226CB95B600BAD7B4 /* SampleTimerAppApp.swift */; };
 		41E6CC2526CB95B600BAD7B4 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E6CC2426CB95B600BAD7B4 /* HomeView.swift */; };
 		41E6CC2726CB95BC00BAD7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E6CC2626CB95BC00BAD7B4 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		417589A226CCF10C00201DCD /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		41E6CC1F26CB95B600BAD7B4 /* SampleTimerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SampleTimerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41E6CC2226CB95B600BAD7B4 /* SampleTimerAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTimerAppApp.swift; sourceTree = "<group>"; };
 		41E6CC2426CB95B600BAD7B4 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -33,6 +35,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		417589A526CCF11500201DCD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				417589A226CCF10C00201DCD /* SettingView.swift */,
+				41E6CC2426CB95B600BAD7B4 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		41E6CC1626CB95B500BAD7B4 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				41E6CC2226CB95B600BAD7B4 /* SampleTimerAppApp.swift */,
-				41E6CC2426CB95B600BAD7B4 /* HomeView.swift */,
+				417589A526CCF11500201DCD /* Views */,
 				41E6CC2626CB95BC00BAD7B4 /* Assets.xcassets */,
 				41E6CC2B26CB95BC00BAD7B4 /* Info.plist */,
 				41E6CC2826CB95BC00BAD7B4 /* Preview Content */,
@@ -160,6 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				417589A326CCF10C00201DCD /* SettingView.swift in Sources */,
 				41E6CC2526CB95B600BAD7B4 /* HomeView.swift in Sources */,
 				41E6CC2326CB95B600BAD7B4 /* SampleTimerAppApp.swift in Sources */,
 			);
