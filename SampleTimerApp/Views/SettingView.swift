@@ -1,8 +1,8 @@
 import SwiftUI
 
 struct SettingView: View {
-	@State var timerValue = 10
-
+	@AppStorage("timer_value") var timerValue = 10
+	
 	var body: some View {
 		ZStack {
 			Image("wallpaper")
@@ -23,7 +23,7 @@ struct SettingView: View {
 						.tag(20)
 						.foregroundColor(.white)
 					Text("30")
-						.tag(300)
+						.tag(30)
 						.foregroundColor(.white)
 					Text("40")
 						.tag(40)
